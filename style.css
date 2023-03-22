@@ -6,14 +6,16 @@
     Dark Green: #28b485
 */
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body {
@@ -22,6 +24,9 @@ body {
     line-height: 1.7;
     color: #777777;
     padding: 3rem;
+
+
+    box-sizing: border-box;
 }
 
 .header {
@@ -126,6 +131,7 @@ body {
     display: inline-block;
     border-radius: 4rem;
     position: relative;
+    font-size: 1.6rem;
 
     transition: all .2s;
 }
@@ -156,7 +162,7 @@ body {
     top: 0;
     left: 0;
     z-index: -10;
-    transition: all .1s;
+    transition: all .2s;
 }
 
 .btn-white::after {
